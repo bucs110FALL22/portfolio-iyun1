@@ -12,6 +12,6 @@ Welcome to CS 110. I look forward to working with you this semester. This is you
 
 Preferred Name: Ivan Yun
 
-Discord username: Ivan Y #2914
+Discord username: Ivan Y#2914
 
 REPL url: https://replit.com/@IvanYun1
