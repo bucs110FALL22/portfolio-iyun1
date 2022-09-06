@@ -1,0 +1,16 @@
+print (10*5)
+print (10**2)
+print (15/10)
+print (15//10)
+print (-15//10)
+print (15%10)
+print (10%15)
+print (10%10)
+print (0%15)
+print (10/15)
+# The last answer is wrong bacause it's a repeating decimal #that should be listed as a fraction, instead.
+
+exchange_rate=int(input("Please enter current Euro to USD exchange rate.") )
+exchange_amount=int(input("Please enter amount of currency to exchange (Note that a $3 USD service charge will be deducted from your total)"))
+result=(exchange_rate*exchange_amount-3)
+print (result)
