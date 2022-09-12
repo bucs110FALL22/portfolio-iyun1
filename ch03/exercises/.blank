@@ -1,0 +1,13 @@
+import random
+
+# Variables
+
+RNG=random.randrange(1, 11)
+guessinput=range(1, 11, 1)
+for num in [3, 2, 1]
+
+#Commands
+
+for i in 
+print (guessinput)
+print (RNG)
