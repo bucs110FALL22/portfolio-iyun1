@@ -10,10 +10,7 @@ window.bgcolor('lightblue')
 
 
 
-
-
  # 4. Pick up the pen so we don’t get lines
-
 
 ## 5. Your PART A code goes here
 #variables
