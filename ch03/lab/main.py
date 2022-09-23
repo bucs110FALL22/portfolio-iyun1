@@ -42,26 +42,26 @@ pygame.time.wait(3000)
 
 michelangelo.goto(-100,20)
 leonardo.goto(-100,-20)
+
+window.exitonclick()
 # PART B - complete part B here
 pygame.init()
 
+coords=[]
+num_sides=4
+side_length=10
+offset=50
+
+
 window=pygame.display.set_mode()
-pygame.display.get_surface()
-numberofsides=input(int("Please enter number of sides")
-#polygoncolor=input("Please enter color of polygon")
-polygonpoints=input("Please enter points of polygon as a list")
-sidelength=input(int("Please enter length of sides"))
-offset=
-coords[]
-
-pygame.draw.polygon[surface, polygoncolor, polygonpoints]
-print(numberofsides)
-print(polygoncolor)
-print(polygonpoints)
-
-for i in [numberofsides]
- (2.0 * math.pi * s) / numberofsides
- side_length * math.cos(theta) + offset
 
 
-window.exitonclick()
+for i in range(num_sides):
+  theta = (2.0 * math.pi*i) / num_sides
+  x = side_length * math.cos(theta) + offset
+  y = side_length * math.sin(theta) + offset
+  coords([25,50],[0,0],[50,0])
+
+pygame.time.wait(3000)
+window.fill
+
