@@ -48,11 +48,11 @@ window.exitonclick()
 pygame.init()
 
 coords=[]
-num_sides=4
+num_sides=3
 side_length=10
 offset=50
 
-
+pygame.Surface()
 window=pygame.display.set_mode()
 
 
@@ -60,8 +60,10 @@ for i in range(num_sides):
   theta = (2.0 * math.pi*i) / num_sides
   x = side_length * math.cos(theta) + offset
   y = side_length * math.sin(theta) + offset
-  coords([25,50],[0,0],[50,0])
+  points=(x,y)
 
+pygame.draw.polygon('black', (25, 50),(50,0),(0,0))
+window.display.flip
 pygame.time.wait(3000)
 window.fill
 
