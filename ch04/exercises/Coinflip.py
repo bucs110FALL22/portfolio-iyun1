@@ -1,6 +1,8 @@
 import random
 import turtle
 
+
+
 #variables
 window = turtle.Screen()
 my_turtle=turtle.Turtle()
@@ -15,7 +17,8 @@ outside=False
 
 my_turtle.up()
 my_turtle.goto(0,0)
-while outside is False:
+
+while not outside:
   coin_flip = random.choice(coinlist)
   print(coin_flip)
   POS = []
@@ -23,19 +26,23 @@ while outside is False:
   x=my_turtle.xcor()
   y=my_turtle.ycor()
   if x > 200:
-   break
+    break
+    outside = True
   if x < -200:
     break
+    outside = True
   if y < -200:
     break
+    outside = True
   if y > 200: 
-   break 
+    break 
+    outside = True
   if coin_flip == 1:
-      my_turtle.left(90)
-      my_turtle.forward(50)
+    my_turtle.left(90)
+    my_turtle.forward(50)
   if coin_flip == 2:
-      my_turtle.right(90)
-      my_turtle.forward(50)
+    my_turtle.right(90)
+    my_turtle.forward(50)
 
   
 window.exitonclick()
