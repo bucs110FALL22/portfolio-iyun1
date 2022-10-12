@@ -3,9 +3,9 @@ def starpyramid():
   
 
   
-  for i in range(starlevel):  
+  for i in range(1,starlevel +1):  
   
-    print((i+1) * "*")
+    print(i * "*")
     
 
 starpyramid()
@@ -15,8 +15,8 @@ def starminus():
   starcount = 1
 
   
-  for i in range(starlevel+1):  
+  for i in range(starlevel, 0, -1):  
   
-    print((starlevel * "*" ))
-    starlevel = starlevel - 1
+    print(i * "*" )
+    
 starminus()
