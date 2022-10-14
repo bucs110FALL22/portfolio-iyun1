@@ -2,13 +2,14 @@ import turtle
 
 myturtle=turtle.Turtle()
 myturtle.color("green")
-
-def drawEQshape(myturtle = None, side_length = 0, ns=0):
-  for i in range(ns):
+myturtle.shape("turtle")
+def drawEQshape(myturtle = None, side_length = 0, number_of_sides=0, angle = 0):
+  for i in number_of_sides * [360/number_of_sides]:
     myturtle.forward(side_length)
-    myturtle.left(90)
+    myturtle.left(i)
 
 
 number_of_sides = int(input("Enter number of sides:"))
 side_length = int(input("Enter side length:"))
-drawEQshape(myturtle, side_length, number_of_sides)
+angle = int(input("Enter angle:"))
+drawEQshape(myturtle, side_length, number_of_sides, angle)
